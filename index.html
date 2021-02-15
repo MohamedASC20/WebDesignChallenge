@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Mohamed Drame</title>
+</head>
+<body>
+    
+    <div class = 'tabs'>
+        <span class = 'navTab' ><a href="#AboutMe"> About me</a></span>
+         <span class = 'navTab'> <a href="#PersonalProjects"> Personal Projects</a></span>
+         <span class = 'navTab'> <a href="#Experience"> Experience</a></span>  
+        <span class="navTab"> <a href="#ContactMepage"> Contact me</a>
+        </span> 
+        </div>
+<h1>Mohamed Drame</h1>
+<div id = 'AboutMe'>
+    
+    <img src = 'skyline.jpg' id = 'skyline'>
+    <img src = 'headshot.jpg' width="300" height="300" id = 'amImg'>
+   <span id = 'amText'> <h1><strong>About Me:</strong></h1>
+    <h3><u>Summary:</u></h3>
+    <p >Hello, my name is Mohamed. I was born and raised in New York City. I am a rising senior at Brooklyn Technical High School where I major in Finance. In this major I take: AP Macroeconomics, AP Microeconomics, AP Statistics, AP Calculus, Priciples of Accounting, Finance & Investments,and Introduction to Business Law. My interest in Finance stems from my time interning at JP Morgan during my freshman
+        year of high school. I gained lots of knowledge about various aspects of the financial world. I am also a beginner level programmer currently learning JavaScript, HTML, and CSS. I have made a few projects that are featured throughout this website.
+    </p>
+    <h3><u>Skills & Strengths:</u></h3>
+    <p>-Beginner level JavaScript, HTML, and CSS <br>
+        -Proficient in Microsoft Office Suite<br>
+        -Conversational in Spanish<br>
+        -Great Communication Skills<br>
+        -Dedicated and Motivated<br>
+        -Works well with others
+    
+    
+    
+    </p>
+</span>
+</div>
+
+<div id = 'PersonalProjects'>
+    <h1><u><strong>Personal Projects</strong> </u></h1>
+    <style>
+        * {box-sizing: border-box}
+        .mySlides1, .mySlides2 {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a grey background color */
+        .prev:hover, .next:hover {
+          background-color: #f1f1f1;
+          color: black;
+        }
+        </style>
+        </head>
+        <body>
+        
+
+        <div id = 'serve'>
+        <p>SERVE:</p>
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <img src="serveWelcome.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="serveHome.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="serveAddMe.png" style="width:100%">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <p id = 'servetext'>SERVE is an individual project that I am currently developing. SERVE is a platform that allows users to find and post events in their community. The added ease of finding community service events will hopefully lead to higher participation rates.</p>
+    </div>
+    <div id = 'skillStudy'>
+        <p>Skill Study:</p>
+        <div class="slideshow-container">
+          <div class="mySlides2">
+            <img src="skillStudyWelcome.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="ssSkils.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides2">
+            <img src="ssQuiz.png" style="width:100%">
+          </div>
+          <div class="mySlides2">
+            <img src="ssRecs.png" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <p id = 'sstext'>Skill Study is a web app that three students and myself created. The platform gives students the oppurtunity to find and develop skills necesarry to pursue a chosen career path. The site features a custom quiz to assess the users knowledge and provides recommedations based on the results.</p>
+        </div>
+        <script>
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+
+<div id = 'rps'>
+    <h3>Rock Paper Scissors</h3>
+    <p><i>(Click Image to play)</i></p>
+   <a href="https://mohamedasc20.github.io/RockPaperScissors/" target="_blank"><img src = 'rockpaperscissorsGame.png' width="50%" id = 'rpsImg' ></a> 
+    
+    <p id = 'rpstext'>Rock Paper Scissors is a classic game that everyone knows and loves. With that, a small team and I created an online version of the game that allows the user to play against a computer. The game features an in-game scoring system.</p>
+</div>
+<div id = 'Experience'></div>
+<header><u><strong>Experience</strong></u></header>
+    <h1>All Star Code(Student, 2020)</h1>
+    <img src = 'asc.png'>
+    <p>-Participated in summer intensive consisting of daily lessons on coding languages 
+        <br> -Learned HTML, CSS, and JavaScript
+       <br> -Worked to create two functional Web Apps(individual and group) to present at final showcase in front of board members.</p>
+    <h1>Junior Econonomic Club(Member, 2020 - Present)</h1>
+    <img src = 'jec.png'>
+    <p>Attended numerous networking events.</p>
+    <h1>Harlem Math Institute(Tutor, 2019)</h1>
+    <img src = 'hmi.jpg' width="200px">
+    <p>-Assisted younger students with different levels of math 
+        <br>-Assisted with daily setup and cleanup
+        <br>-Oversaw small groups of kids</p>
+    <h1>J.P.Morgan Project Live(Mentee, 2018)</h1>
+    <img src = 'jpm.jpg'>
+    <p>Partnered with two J.P. Morgan employees who served as my mentors. Met weekly at the J.P. Morgan New York headquarters where workshops were held about various topics ranging from college-readiness to investing in the stock market. At the beginning of the program each student was to choose two stocks and follow them for the duration of the program. At the end of the program our final project was to present our stock portfolios to a room full of employees.</p>	
+    <h1>TRUCE Media and Arts(Student, 2017 - Present)</h1>
+    <img src = 'truce.jpg'>
+    <p>-Participated in Reel Deal unit; edited a half-hour film in a team of 10 individuals for final showcase
+        <br>-Participated in Graphic Design unit; assisted in the creation of annual magazine.</p>
+    </div>
+    <div id = 'ContactMepage'></div>
+        <h1>Get In Touch With Me!</h1>
+        <div class="container">
+          <form action="https://formspree.io/xnqoqgbp" method="POST">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="title">Title</label>
+              <select id="title" name="title">
+                <option value="Mr"></option>
+                <option value="Mr">Mr.</option>
+                <option value="Ms">Ms.</option>
+                <option value="Mrs">Mrs.</option>
+                <option value="Dr">Dr.</option>
+              </select>
+             
+              <label for = 'email'>Email</label>
+              <input type = 'email' id ='email' name = '_replyto' placeholder="Your email">
+
+
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Type your message here..." style="height:200px"></textarea>
+          
+              <input type="submit" value="Send" id = 'submitButton'>
+              <p id = 'mS'>Message Submitted!</p>
+          
+            </form>
+          </div>
+        </div>
+        <div id = 'contactMe'>
+            <h1><u><strong>Contact Me</strong></u></h1>
+            <span id = "contacts">
+        <a href  ="https://www.linkedin.com/in/mohamed-drame-b7b4851b4" target = '_blank'><img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABDlBMVEX8+/clZ7MlZ7UkaLP8+/r/+vT7/PkmZ6/8//+fu8ZfhK4eX6DB2eYcWZ8rZa8lZbUoYJ3d7vb///MiYK8hZ771///7/PUkaaz/+PgjYLb2//ofWqgvYZlkibGgt9j5/e47bKXT5u8fVKWyyNz8+v//+uweX6Eeab3p+f//+PwbV5Iha6odV5j6/uvG4PCqw9KkuMiJqMEcV45OdpqkwNYvYI9Ab52Cnrw/ZpjG4OgjbJ/R6fk7Y6dPc7RUfLkbbbXc8e84WpdDX4htk7Ryjq9JcKN6mbORrL9Vg6lynMSMtdw/a5ZniZ5kibIqYr9JeZVbfq8hSXbh5uo2a4u/0OS0yNPP7PGewuXT4PIpW34x1XV+AAAKrUlEQVR4nO2dC3/SSALAk3lksoVkQshMeLRSCiEhpQ9akLq9vbpnre66V73d6nnf/4vcTEClTdCuBgj85q9Wf3SM83fez2iaQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKB6CEHY1DRcCPo2SkZcadzkytH6fH4mHGoa5dkQkDI5FZDjPz1BzMWLR8clPReC002Y8CDDOxe+TIWeV4f6gVxIkX9ZFrycjcHZ+GpmiyNRyMhSZwWSjccn2ikEYAt95esxQTqmYGLKJ5XnQtolAXzOQEECBPRgx7OZREJHpBpxNYpsCSIqCDgCtxicslzRERhCYncH0setOvilJNAC1x+08BGUTqEUXNhD/awURnAIJtfdYLs0FxubICqmgWIY+8KxnuRhyzPaqwIaFyaRTKDn0DoZmLoY8GkPiEwILpUjtn2H9PBdDTbuMRT2qz0p4URA1u052IwPVEPphw+O4WEVwhg1zMyyXCmtYycmwmGkoc+mWG+aWhrw8KKIhtHUoDUW368f8EHLLVgEFRTmkwKmIMdSPjvWLbKgrQ2X4aEMx8FjD/8GSDYWS6DYB/YpYlvWPX/6571jN6tWVGICszHbphkCOQokz/q38nJmNRlQeXgyINFxV07LsXApkatnxsNLgcpI20FzOnvxq61tlSHoXx8w9cruCfhe5LfPynUO2JZfqlNrOywrjAcatVotrZhdh3oiunZXNxS09DQG5uJQzz90uNlC3f+TW+jVci/ZKcDvSkIT0rMzSwc3Kv2i4FYYQ2BMzNQ+EsWmeDLYjDXUYVzIm1THn7M2KSuKy07D3gmUtG/DAfNXbDsPSyMDdVOguCrT2IJm32nRDMLjUMgwRwpjt2gBCuvGGMdNwxqMN1zVf25SQ5fdslp1Ld5kbZMypG27A9rbCkIy33VCPGc9anxSGW5JLadzOLIemSMM3W2EInY6ZnqjkrT5uXVpiZLyCzumy69LetahMU4a8H7RGzaXLrcLQo7tiZJEKXMNHbL+6FYYh7U3MDEO3cdJcfmO/CkMgHl/OWJ9sVHa3ZIxPYEjeVOT2MtFRk0MK2XIgjUc79qomFpds6BOo915WTI77fWnYkvNRGoquHX1bZqJoCEjp4piZWr/b7SLUr2GjUdnZnpkoSr0QwPpgWGFmX+65wZoZjcbVFe5JWbohpTq9pc74phyxBmPs2asLy/PC1Skuu6YhoiCCZK+bFT99vbPvxCKDhvr2zAhDgfw92Q1mEyCn82efbkk5vM9aVt/U+qEyVIayWkkWf+fRYfLxvVDySyrcve/L0eR0PRJMqyn5IPjNwr3s1oJS36cpfMHh3Jw31Q8Jtak3F6Rep1R8SEhIdSLDi/qXeHVatau2IHETIXy5C5jAr2yIXHYaeh65Av4DiNxp630ZPUERCnj0YbDDQ+oRYS63bCeb0uPx+Yub4avhZHJz/dIZWKJrFIZQPG+NhtALfcc6aD7Esux5wzB0Sk2r+TBcj9Z1Ih4qOge25eyctkWfyDQbyXkcFh2Pri8s24aiO7FGQ1+3X5c7ad53fptfmAFORpjO3e9ND4oeUBiS0ptXH1ijpSVHqlwxCONBizMWlW/GVp2uNQ2p/YeptR7gmpyNSnOC+i7jWuNeEPHTPXaA3Lehl96cRIy7ybQkqtXwdFlAjjY5q0wcsk5DEFZfmBg9QMMBH1mzEEnFuMuCwNW+hKghw0D9cuxfUUDiScTluBJ1hZJhyGM+YhjWFwMx+aHZ3ukRujZD6tf/3UgdO+Ko7z5pkpmhZJfJU1MPH1luXsFbZ1zOnlWWyEUfxIYDMQxdVxr69b0MQ+OxhiFtvr1k2sKTS0jjHCHWifWFa+aFNnx2EFrvnsscWluwOVSetkJYntZZOBgrtGH5oPc0EjXOV87XifpH40HARvFGpuHxwbjdPTJk5fI1Q9MQihNr8ww14+4/HYYDA30tbqIK4g1RpUYvaXhI6htmWP6DiUL2zX+bt7CGzJHlXZGMefQiG2p//mkurkbnHpc0Jey8KnpAG2b4dw5hY7c8uKX+xhnyxxz/rNVESOw2/hJDkc0zfMy/Xetrssls/GR59oYZzgTkSoeGRbvgirZxYar2jz40vU3LpQmGHHNwV442WrLnbS44TNhvsf2NK4czRbcVuLW+XNlJBkwLgtVcNrEz9pFtgKEcJNXcI5FDGybS3GBBA8ldo1PatPZwityqySrP3p+cnnTakbmoIIrKpnKWMcIouGFDbvFvPD95XUombpz46VAut/LM6GJzvGlpiIVhi5snfznVadRpqPfGp0wLeCMVX4S4ubd5rYXL5VUUejjLfdTz6tXBkAWBkTY0uDnMiEKhDQ1Re7DJGbj17GlgAkPPo/HIyNgNiAzXGGXsOy64IWad2NcpnV2VIid/AYBnFSNI1TeIB7xTSsWg2Iaifox2QQgJnM1RTAPD3oRlGrrPBhtm2MWNUdObLcJ8CQyufo7Shlqrq7Uz9soV21AM+mwvHWm4W3azDPHzTTNEqH1G000cgKWhkWkYWXqq31ZoQ26Oetk7yV5nXDkjDNmmlUPOrqsgNaglxANvonR72Oq6zNmw9pCzd6KhSBnqHtj9kDZ0u25jf9MMows7PZdNPO/Qak8XouZjgFnL2DzDOGNjEQmF4Ue+HYaXwjDVmSZUGN5th6FWHmSUQ596frOzHYZGuRem61JpeNDRtsRwIAzhp+1/M+QOlmZH1DT3/8JmGt4JQz9tqB8eKENlqAyVoTJUhspQGSpDZagMlaEyVIbKUBkqQ2WoDJWhMlSGylAZKkNlqAy3xfBRZ0g3w5D69R2OjeRli1+OMXMut4JOY53EH/SkIW89wL2zQPoVdYTQsPReHpydf2arcYSweZGKwbIN6z7dcYPknZmo+wU3+LzZdWrosMDF3YcIQ6in9rVBYei8dwN58nIuMD7C6zD0fLo325Itz7x8gnPzyexGusQQ7jIRyH0IvxvoNGNvIgDOe8OVuzHmAmtHqMZerj6XHtJ3Hy7baS5/v2foZIVpt/9rEZAyBMAGvSepsB/bHz9++GXlhvqhVx1bA4l18JmmFZ+VZpudprnU/nVgxc2DB8QWzTg0KQ31wVkcx4PBXODmWXMwrqcPzSz7bpNDz/O96Sv1CJQ/5BfgiQpk3pBSm4ZUfg/Cz6EgsT3vyk/FWRjS0IaAArn/+1Ng6MFbWsrI0uoGHmWoDNePMnw8hX3vGsjLsKDvzsvVsJBveMzR0CjHi6/BWR95puFxIQ11W/TTKygXw+Rdsit5KcffIUnDSBr+4BseOe9G/4M0uZG1SAD/0Ku/zeN9wBx32bm8XBamz1atE0B8r3qThyHGffNVLwyLllGBTrLvTP8Oakie95xebFkcIAClc/bjL8oVGDWXnQ50UpwkTCp2MYw8K+cjaMj3/u05thcCkrBuQXkfvMQaZhwa/l5w9NbyxPhdB9D39eS6QPkj+TL7872PFn8nj8BE3plJ4sniG/u+AxTdnPkAhEITpO9lXTG3t57eOzuN0COumno0GLNnr2PLrlZt8Wvd2KXxjeyvLb7P7jsMA26yy9Fkb6cAXA9P5Ksl8yuEkgbv92stbhYEZnA59f93rgz7JgZCs9d0aHjt5OilUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUW8T/ARg4UF6Id5PpAAAAAElFTkSuQmCC" width="100"></a>
+
+        <a href = "mailto:mdrame1109@gmail.com"><img src = "https://image.flaticon.com/icons/png/512/281/281769.png" width="100" > </a>
+        </span>
+        </div>
+   
+<footer>
+    <p class = 'footer'>2020, Mohamed Drame. All Rights Reserved. <br> Site by Mohamed Drame</p>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
